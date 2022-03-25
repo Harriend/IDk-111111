@@ -1,0 +1,61 @@
+
+
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css" type="text/html">
+   <script src="main.js"></script>
+  
+  </head>
+
+  <body style="background: rgb(78, 224, 224);">
+      <center>
+          <h1 style="color: white;">Family Recognition App</h1><br><br>
+
+          <div class="form-group">
+          <h3>Me</h3><hr>
+          <h3>Mom</h3><hr>
+          <h3>Dad</h3><hr>
+          <h3>Sister</h3>
+          </div>
+        <br><br><br>
+
+        <label>
+            Your webcam:
+        </label>
+        <div id="camera"><br>
+
+          
+        </div>
+
+        <label>
+          Pic Taken:
+      </label>
+        
+        <div id="picTaken">
+
+        </div>
+        
+        <br><br>
+        
+        <button class="form-control" onclick="picture()" style="width: 30%; background: cyan;">Take Picture</button>
+        <br>
+        <button class="form-control" onclick="find()" style="width: 30%; background: cyan;">Check Family member</button>
+        <br><br>
+
+        <p style="font-size:22px;" id="accuracy">Accuracy:</p><br>
+        <p style="font-size:22px;" id="object">Object:</p>
+   
+        <!-- teachable machine link: https://teachablemachine.withgoogle.com/models/bndpTInTr/ -->
+
+      </center>
+  </body>
+
+  </html>
